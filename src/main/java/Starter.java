@@ -16,7 +16,7 @@ public class Starter {
         competitions.add(competition1);
         competitions.add(competition2);
         competitions.add(competition3);
-        ArrayList<Integer> results = new ArrayList<Integer>(Arrays.asList(1, 0, 1));
+        ArrayList<Integer> results = new ArrayList<Integer>(Arrays.asList(0, 0, 1));
 
         System.out.println(TournamentWinner.tournamentWinner(competitions, results));
     }

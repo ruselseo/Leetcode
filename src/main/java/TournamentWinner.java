@@ -11,8 +11,8 @@ public class TournamentWinner {
                 .distinct()
                 .collect(Collectors.toMap(i->i, k-> 0));
 
-        Map<String, String> mathes = competitions.stream()
-                .collect(Collectors.toMap(ArrayList::getFirst, ArrayList::getLast));
+        LinkedHashMap<String, String> mathes = competitions.stream()
+                .collect(Collectors.toMap(ArrayList::getFirst, ArrayList::getLast, (x, y) -> y, LinkedHashMap::new));
 
         mathes.forEach((k, v) -> {
             if(res.pollFirst() == 1){

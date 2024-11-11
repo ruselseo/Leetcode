@@ -18,16 +18,22 @@ public class Starter {
 //        competitions.add(competition2);
 //        competitions.add(competition3);
 //        ArrayList<Integer> results = new ArrayList<Integer>(Arrays.asList(0, 1, 1));
-        ArrayList<ArrayList<String>> competitions3 = new ArrayList<>(List.of(
-                new ArrayList<>(List.of("HTML", "Java")),
-                new ArrayList<>(List.of("Java", "Python")),
-                new ArrayList<>(List.of("Python", "HTML")),
-                new ArrayList<>(List.of("C#", "Python")),
-                new ArrayList<>(List.of("Java", "C#")),
-                new ArrayList<>(List.of("C#", "HTML"))
-        ));
-        ArrayList<Integer> results3 = new ArrayList<>(List.of(0, 1, 1, 1, 0, 1));
+//        ArrayList<ArrayList<String>> competitions3 = new ArrayList<>(List.of(
+//                new ArrayList<>(List.of("HTML", "Java")),
+//                new ArrayList<>(List.of("Java", "Python")),
+//                new ArrayList<>(List.of("Python", "HTML")),
+//                new ArrayList<>(List.of("C#", "Python")),
+//                new ArrayList<>(List.of("Java", "C#")),
+//                new ArrayList<>(List.of("C#", "HTML"))
+//        ));
+//        ArrayList<Integer> results3 = new ArrayList<>(List.of(0, 1, 1, 1, 0, 1));
+//
+//        System.out.println(TournamentWinner.tournamentWinner(competitions3, results3));
 
-        System.out.println(TournamentWinner.tournamentWinner(competitions3, results3));
+        int k = 4;
+        int[] nums = {1,12,-5,-6,50,3};
+        var maxAvg = new MaxAvgSubArray();
+
+        System.out.println(maxAvg.findMaxAverage(nums, k));
     }
 }

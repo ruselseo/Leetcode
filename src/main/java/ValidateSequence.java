@@ -1,4 +1,4 @@
-package com.ruselseo.leetcode.easy;
+package main.java;
 
 import java.util.List;
 
@@ -6,7 +6,7 @@ import java.util.List;
  *
  */
 
-public class ValidateSubsequence {
+public class ValidateSequence {
 
     public static boolean isValidSubsequence(List<Integer> array, List<Integer> sequence) {
         int sequenceIndex = 0;

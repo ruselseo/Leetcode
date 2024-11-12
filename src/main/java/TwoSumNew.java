@@ -1,4 +1,4 @@
-package com.ruselseo.leetcode.easy;
+package main.java;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -27,7 +27,7 @@ import java.util.Map;
  *
  * Follow-up: Can you come up with an algorithm that is less than O(n2) time complexity?
  */
-public class TwoSum {
+public class TwoSumNew {
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {

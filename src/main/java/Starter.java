@@ -1,5 +1,6 @@
 package main.java;
 
+import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -30,10 +31,16 @@ public class Starter {
 //
 //        System.out.println(TournamentWinner.tournamentWinner(competitions3, results3));
 
-        int k = 4;
-        int[] nums = {1,12,-5,-6,50,3};
-        var maxAvg = new MaxAvgSubArray();
+//        int k = 4;
+//        int[] nums = {1,12,-5,-6,50,3};
+//        var maxAvg = new MaxAvgSubArray();
+//
+//        System.out.println(maxAvg.findMaxAverage(nums, k));
 
-        System.out.println(maxAvg.findMaxAverage(nums, k));
+        int[][] array = new int[][]{{1,2,3},{4,5,6}};
+        System.out.println(array[0].length);
+
+        TransposeMatrix transposeMatrix = new TransposeMatrix();
+        System.out.println(Arrays.deepToString(transposeMatrix.transpose(array)));
     }
 }

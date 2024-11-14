@@ -32,7 +32,7 @@ public class Starter {
 //        System.out.println(TournamentWinner.tournamentWinner(competitions3, results3));
 
 //        int k = 4;
-        int[] nums = {1,0,3,4,3};
+        int[] nums = {12, 3, 1, 2, -6, 5, -8, 6};
 //        var maxAvg = new MaxAvgSubArray();
 //
 //        System.out.println(maxAvg.findMaxAverage(nums, k));
@@ -42,8 +42,10 @@ public class Starter {
 //
 //        TransposeMatrix transposeMatrix = new TransposeMatrix();
 //        System.out.println(Arrays.deepToString(transposeMatrix.transpose(array)));
+//
+//        FruitIntoBasket fruitIntoBasket = new FruitIntoBasket();
+//        System.out.println(fruitIntoBasket.totalFruit(nums));
 
-        FruitIntoBasket fruitIntoBasket = new FruitIntoBasket();
-        System.out.println(fruitIntoBasket.totalFruit(nums));
+        System.out.println(Arrays.toString(ThreeSum.threeNumberSum(nums, 0).stream().map(Arrays::toString).toArray()));
     }
 }
